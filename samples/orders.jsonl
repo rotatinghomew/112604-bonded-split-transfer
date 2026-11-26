@@ -1,0 +1,5 @@
+{"move": "MV-17", "vin": "LTEST000000000031", "from_yard": "Y1", "to_yard": "Y2", "carrier": "T1", "bond": "B5", "cny_fen": 140000, "window_end": "2026-11-27T04:00:00Z", "window_start": "2026-11-27T01:00:00Z"}
+{"move": "MV-17", "vin": "LTEST000000000032", "from_yard": "Y1", "to_yard": "Y2", "carrier": "T1", "bond": "B5", "cny_fen": 110000, "window_end": "2026-11-27T04:00:00Z", "window_start": "2026-11-27T01:00:00Z"}
+{"move": "MV-17", "vin": "LTEST000000000033", "from_yard": "Y1", "to_yard": "Y2", "carrier": "T1", "bond": "B5", "cny_fen": 110000, "window_end": "2026-11-27T04:00:00Z", "window_start": "2026-11-27T01:00:00Z"}
+{"move": "MV-18", "vin": "LTEST000000000032", "from_yard": "Y1", "to_yard": "Y3", "carrier": "T2", "bond": "B5", "cny_fen": 130000, "window_end": "2026-11-27T05:00:00Z", "window_start": "2026-11-27T01:00:00Z"}
+{"move": "MV-19", "vin": "LTEST000000000034", "from_yard": "Y1", "to_yard": "Y3", "carrier": "T2", "bond": "B5", "cny_fen": 145000, "window_end": "2026-11-27T05:30:00Z", "window_start": "2026-11-27T01:00:00Z"}

@@ -1,0 +1,113 @@
+[
+  [
+    "GET",
+    "/yard/Y2/receipts",
+    null,
+    [
+      [
+        200,
+        [
+          {
+            "receipt": "Y2-R1",
+            "move": "MV-17",
+            "leg": "MV-17-Y2",
+            "staff": "lan-24",
+            "recorded_at": "2026-11-27T02:12:00Z",
+            "lines": [
+              {
+                "vin": "LTEST000000000031",
+                "result": "accepted_damaged",
+                "damage_ref": "Y2-D19"
+              },
+              {
+                "vin": "LTEST000000000033",
+                "result": "rejected"
+              }
+            ]
+          }
+        ]
+      ],
+      [
+        200,
+        [
+          {
+            "receipt": "Y2-C2",
+            "move": "MV-17",
+            "leg": "MV-17-Y2",
+            "staff": "lan-24",
+            "recorded_at": "2026-11-27T02:23:00Z",
+            "lines": [
+              {
+                "vin": "LTEST000000000032",
+                "result": "close_without_acceptance"
+              }
+            ]
+          }
+        ]
+      ]
+    ]
+  ],
+  [
+    "POST",
+    "/bonds/B5/entries",
+    {
+      "entry": "b-32-swap",
+      "leg": "MV-17-Y3",
+      "vin": "LTEST000000000032",
+      "operation": "replace",
+      "cny_fen": 140000,
+      "replaces": "b-32-y2"
+    },
+    [
+      [
+        0,
+        {}
+      ]
+    ]
+  ],
+  [
+    "GET",
+    "/bonds/B5/entries/b-32-swap",
+    null,
+    [
+      [
+        404,
+        {}
+      ],
+      [
+        200,
+        {
+          "entry": "b-32-swap",
+          "status": "accepted",
+          "released_entry": "b-32-y2",
+          "cny_fen": 140000
+        }
+      ]
+    ]
+  ],
+  [
+    "GET",
+    "/yard/Y1/receipts",
+    null,
+    [
+      [
+        200,
+        [
+          {
+            "receipt": "Y1-R6",
+            "move": "MV-17",
+            "leg": "MV-17-Y1",
+            "staff": "yuan-15",
+            "recorded_at": "2026-11-27T03:08:00Z",
+            "lines": [
+              {
+                "vin": "LTEST000000000033",
+                "result": "accepted"
+              }
+            ]
+          }
+        ]
+      ]
+    ]
+  ]
+]

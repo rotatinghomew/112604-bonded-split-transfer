@@ -1,0 +1,5 @@
+{"asset": "LTEST000000000031", "type": "custody", "holder": "Y1", "cny_fen": 0}
+{"asset": "LTEST000000000032", "type": "custody", "holder": "Y1", "cny_fen": 0}
+{"asset": "LTEST000000000033", "type": "custody", "holder": "Y1", "cny_fen": 0}
+{"asset": "LTEST000000000034", "type": "custody", "holder": "Y1", "cny_fen": 0}
+{"asset": "B5", "type": "bond", "holder": "guarantee-5", "cny_fen": 440000}
